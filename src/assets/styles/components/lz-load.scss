@@ -1,0 +1,22 @@
+.lz-load {
+  opacity: 1;
+  transition: opacity 500ms;
+  &.loading {
+    opacity: 0;
+  }
+  &.loaded {
+    opacity: 1;
+  }
+  &.failed {
+    opacity: 0;
+  }
+
+  &.lg {
+    transition: opacity 550ms 100ms;
+  }
+
+  &.lz-load-bg {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}

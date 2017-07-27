@@ -1,0 +1,18 @@
+{
+  "manifest_version": 1,
+  "name": "Universal React App",
+  "version": "1.0.0",
+  "default_locale": "en",
+  "description": "Universal React App",
+  "icons": [{
+    "src": "assets/images/favicon/favicon-32x32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  }],
+  "background_color": "#ffffff",
+  "theme_color": "#00C972",
+  "orientation": "portrait",
+  "related_applications": [{
+    "platform": "web"
+  }]
+}

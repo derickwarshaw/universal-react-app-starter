@@ -1,0 +1,110 @@
+$mobile-width: 480px;
+$tablet-landscape-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-landscape-width - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin tablet-l {
+  @media (min-width: #{$tablet-landscape-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+
+@mixin gradientleftright($left: #000000, $right: #ffffff) {
+  background: $left;
+  background: -moz-linear-gradient(left, $left 0%, $right 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, $left), color-stop(100%, $right));
+  background: -webkit-linear-gradient(left, $left 0%, $right 100%);
+  background: -o-linear-gradient(left, $left 0%, $right 100%);
+  background: -ms-linear-gradient(left, $left 0%, $right 100%);
+  background: linear-gradient(to right, $left 0%, $right 100%);
+}
+
+@mixin gradientMiddlePoint($top: #021846, $middle: #007ece, $bottom: #021846) {
+  background-color: $middle;
+  background: -moz-linear-gradient(top, $top 0%, $middle 50%, $bottom 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, $top), color-stop(50%, $middle), color-stop(100%, $bottom));
+  background: -webkit-linear-gradient(top, $top 0%, $middle 50%, $bottom 100%);
+  background: -o-linear-gradient(top, $top 0%, $middle 50%, $bottom 100%);
+  background: -ms-linear-gradient(top, $top 0%, $middle 50%, $bottom 100%);
+  background: linear-gradient(to bottom, $top 0%, $middle 50%, $bottom 100%);
+}
+
+@mixin gradientFromTop($top: #021846, $bottom: #021846) {
+  background-color: $top;
+  background: -moz-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, $top), color-stop(100%, $bottom));
+  background: -webkit-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -o-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -ms-linear-gradient(top, $top 0%, $bottom 100%);
+  background: linear-gradient(to bottom, $top 0%, $bottom 100%);
+}
+
+@mixin includeCustomFont($family: arial, $path: '', $weight: normal, $style: normal){
+  @font-face{
+    font-family: $family;
+    src:url($path + '.eot');
+    src:url($path + '.eot?#iefix') format('embedded-opentype'),
+        url($path + '.woff2') format('woff2'),
+        url($path + '.otf') format('truetype'),
+        url($path + '.svg#icon') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}

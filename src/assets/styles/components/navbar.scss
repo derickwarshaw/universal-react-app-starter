@@ -1,0 +1,136 @@
+.navbar {
+  height: 70px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: none;
+  padding: 25px 15px;
+  z-index: 80;
+
+  & > div {
+    position: relative;
+    display: block;
+    height: 100%;
+    z-index: 9;
+  }
+
+  .nav-logo {
+    height: 40px;
+    display: block;
+    float: left;
+    position: absolute;
+    //left: 0;
+    top: 50%;
+    margin-top: -10px;
+    img {
+      height: 100%;
+      width: auto;
+      max-width: none;
+    }
+  }
+
+  ul.links {
+    display: block;
+    float: right;
+    padding: 0;
+    margin: 0 -15px;
+    list-style: none;
+
+    li {
+      float: left;
+      position: relative;
+      display: block;
+      padding: 0 10px;
+      margin: 4px 20px;
+
+      @media (max-width: 1080px) {
+        margin: 4px 10px;
+      }
+      @media (max-width: 1000px) {
+        margin: 4px 5px;
+      }
+
+      .link {
+        text-decoration: none;
+        line-height: 32px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        display: block;
+        padding: 0;
+        text-align: center;
+        position: relative;
+        &:hover {
+          //color: lighten($primary, 5%);
+        }
+
+        &.btn {
+          min-width: 116px;
+          &:hover {
+            background: #ffffff !important;
+            color: #FF4949 !important;
+          }
+        }
+      }
+
+      &.link-with-dropdown {
+        cursor: pointer;
+        position: relative;
+        & > .link {
+          color: #fff !important;
+        }
+
+        .link-dropdown {
+          position: absolute;
+          left: 50%;
+          transform: translate3d(-50%, 14px, 0);
+          opacity: 1;
+          ul {
+            margin: 10px 0 0;
+            padding: 10px 0;
+            background: #fff;
+            min-width: 130px;
+            box-shadow: 0 20px 13px 0 rgba(0,0,0,.05);
+            border-radius: 2px;
+          }
+          li {
+            display: block;
+            float: none;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+          }
+          .link {
+            display: block;
+            float: none;
+            color: #000;
+            padding: 4px 10px;
+            width: 100%;
+            text-align: center;
+            &:hover {
+              color: $primary;
+            }
+          }
+
+          // Hide state
+          transform: translate3d(-50%, -14px, 0);
+          opacity: 0;
+          pointer-events: none;
+
+          transition: transform 275ms, opacity 125ms;
+        }
+        &:hover {
+          .link-dropdown {
+            transform: translate3d(-50%, 0, 0);
+            opacity: 1;
+            pointer-events: auto;
+            transition: transform 275ms, opacity 180ms;
+          }
+        }
+      }
+    }
+  }
+}
