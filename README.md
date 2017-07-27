@@ -40,3 +40,9 @@ The server side with node, express, React & Webpack.
 ```
   npm run prod
 ```
+
+
+
+
+
+*This is just an first approach. Feel free to contribute by sending a PR*
