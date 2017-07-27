@@ -14,9 +14,13 @@ By prerendering the page, on the server, we allow the search engines to crawl th
 
 *The server also generates a simple sitemap based on the routes of the app*  
 
+
+
 ### Tech
 - The front-end is built with React, Redux, React-router-v4, Webpack, Helmet, ...
 - The server side with node, express, React & Webpack.
+
+___
 
 ### Building
 To build invoke the following commands:
@@ -33,7 +37,6 @@ To run on development mode invoke the following command:
 ```
   npm run start
 ```
-
 
 ### Production
 To run on production mode invoke the following command:
