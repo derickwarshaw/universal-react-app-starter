@@ -11,7 +11,8 @@ By prerendering the page, on the server, we allow the search engines to crawl th
    - For **all the async requests** of data that is **not crucial for first render** of the page **should go into component's lifecylce methods** like componentWillMount()  
    - *Check the About's page as an example*  
 3. The server renders the html view for that route  
-   *Here is where the web crawlers will see the already rendered page*
+   *Here is where the web crawlers will see the already rendered page.  
+   Page with async data if it was fetched in previous step*
 4. The browser obtains the fully rendered page and with the async data already in the Redux Store's state
 5. From now on the page acts like a SPA with all the benefits of React without jeopardising the page's SEO
 6. The server also generates a simple sitemap based on the routes of the app
