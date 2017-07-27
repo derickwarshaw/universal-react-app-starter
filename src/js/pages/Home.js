@@ -9,6 +9,7 @@ class Home extends React.Component {
       <div>
         <Helmet>
           <title>Home</title>
+          <meta name="description" content="About Page description" />
         </Helmet>
         <Hero>
           <h1>Home Page</h1>

@@ -11,14 +11,14 @@ import reducers from '../src/js/redux/reducers';
 import thunk from '../src/js/redux/middleware/thunk';
 
 import App from '../src/js/app';
-import routeBank from '../src/js/routes';
+import { routes } from '../src/js/routes';
 
 module.exports = function(app) {
   const store = createStore(reducers, {}, applyMiddleware(thunk));
 
   app.get('*', (req, res) => {
       let foundPath = null;
-      let { path, component } = routeBank.routes.find(
+      let { path, component } = routes.find(
           ({ path, exact }) => {
               foundPath = matchPath(req.url,
                   {

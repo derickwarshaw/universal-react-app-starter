@@ -17,7 +17,8 @@ class About extends React.Component {
         return (
             <div>
                 <Helmet>
-                    <title>About</title>
+                  <title>About</title>
+                  <meta name="description" content="About Page description" />
                 </Helmet>
                 <Hero>
                   <h1>About page</h1>
