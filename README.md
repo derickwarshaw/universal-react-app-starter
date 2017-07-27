@@ -24,7 +24,7 @@ To build invoke the following commands:
 ```
 
 ### Development
-To run invoke the following command:
+To run on development mode invoke the following command:
 
 ```
   npm run start
@@ -32,7 +32,7 @@ To run invoke the following command:
 
 
 ### Production
-To run invoke the following command:
+To run on production mode invoke the following command:
 
 ```
   npm run prod
