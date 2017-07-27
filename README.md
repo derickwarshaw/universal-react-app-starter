@@ -18,23 +18,24 @@ By prerendering the page, on the server, we allow the search engines to crawl th
 
 
 
-### Tech
+## Tech
 This app is built with React, Redux, React-router-v4, Webpack, Helmet, ...  
 The server side with node, express, React & Webpack.
 
 
+## To start
 ### Clone the project & install dependencies
 ```
   git clone https://github.com/jonanderdev/universal-react-app-starter
   npm install
 ```
 
-### Building and running locally
+## Building and running
+### locally
 ```
   npm run start
 ```
-
-### Building and running in production
+### Production
 ```
   npm run prod
 ```
