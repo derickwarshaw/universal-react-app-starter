@@ -1,5 +1,4 @@
-# 🚀 Simple universal react app starter
-
+# 🚀 Simple Universal React app starter
 To solve the classic SEO problems of the SPA (Single Page applications) we can use the Isomorphic (Universal) approach.
 By prerendering the page, on the server, we allow the search engines to crawl the page.
 
