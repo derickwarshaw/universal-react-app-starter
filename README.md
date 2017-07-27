@@ -44,4 +44,4 @@ The server side with node, express, React & Webpack.
 ---
 
 ## Contribute
-This is just an first approach. Feel free to contribute by sending a PR.
+This is just an first approach. Feel free to contribute by sending a *pull request* or by creating an *issue*.
