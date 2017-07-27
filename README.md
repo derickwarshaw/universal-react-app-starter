@@ -23,26 +23,18 @@ This app is built with React, Redux, React-router-v4, Webpack, Helmet, ...
 The server side with node, express, React & Webpack.
 
 
-### Building
-To build invoke the following commands:
-
+### Clone the project & install dependencies
 ```
   git clone https://github.com/jonanderdev/universal-react-app-starter
   npm install
-  npm run build:client
-  npm run build:server
 ```
 
-### Development
-To run on development mode invoke the following command:
-
+### Building and running locally
 ```
   npm run start
 ```
 
-### Production
-To run on production mode invoke the following command:
-
+### Building and running in production
 ```
   npm run prod
 ```
