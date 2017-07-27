@@ -5,7 +5,7 @@ By prerendering the page on the server, we allow the search engines to properly 
 
 ### Works like this
 1. The browser points to a route  
-2. The server check if any async data if needed for the Redux Store's initial state  
+2. The server check if any async data is needed for the Redux Store's initial state  
    - Each route's main component can have a **static fetchData** method  
    - This method receives the Store and is useful to fetch initial data of the page, which will be saved in the Store's state   
    - For **all the async requests** of data that is **not crucial for first render** of the page **should go into component's lifecylce methods** like componentWillMount()  
