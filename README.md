@@ -2,7 +2,8 @@
 
 To solve the classic SEO problems of the SPA (Single Page applications) we can use the Isomorphic (Universal) approach.
 By prerendering the page, on the server, we allow the search engines to crawl the page.
-It works like this:
+
+### Works like this
  - The browser points to a route
  - The server renders the app for that route (waiting to fetch any async data if needed)
  - The browser obtains the rendered page with the data in the Redux Store
