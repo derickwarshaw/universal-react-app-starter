@@ -12,7 +12,7 @@ By prerendering the page, on the server, we allow the search engines to crawl th
    - *Check the About's page as an example*  
 3. The server renders the html view for that route  
    *Here is where the web crawlers will see the already rendered page.  
-   Page that will render with Redux initial data if it was fetched in previous step*
+   Page that will render with initial state's data if it was fetched in previous step*
 4. The browser obtains the fully rendered page and with the async data already in the Redux Store's state
 5. From now on the page acts like a SPA with all the benefits of React without jeopardising the page's SEO
 6. The server also generates a simple sitemap based on the routes of the app
