@@ -25,7 +25,7 @@ The server side with node, express, React & Webpack.
 ---
 
 ## To start
-### Clone the project & install dependencies
+### Clone and install dependencies
 ```
   git clone https://github.com/jonanderdev/universal-react-app-starter
   npm install
