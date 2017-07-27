@@ -10,10 +10,10 @@ By prerendering the page, on the server, we allow the search engines to crawl th
    - For **all the async requests** of data that is **not crucial for first render** of the page **should go into component's lifecylce methods** like componentWillMount().  
    - *Check the About's page as an example*
 3. The browser obtains the rendered page with the async data, if it was obtained in previous state and with the data already in the Redux Store's state.
-4. From now on the browser page acts like a SPA with all the benefits & without jeopardising the page's SEO.
+4. From now on the browser page acts like a SPA with all the benefits & without jeopardising the page's SEO.  
+
 
 *The server also generates a simple sitemap based on the routes of the app*  
-
 
 
 ___
