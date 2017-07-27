@@ -1,4 +1,4 @@
-## Next Media Accelerator
+## 🚀 Simple universal react app starter
 
 The site is built with React, React router v4 & Webpack.
 The server side with node, express & Webpack.
