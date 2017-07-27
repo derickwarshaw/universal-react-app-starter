@@ -2,6 +2,7 @@
 To solve the classic SEO problems of the SPA (Single Page applications) we can use the Isomorphic (Universal) approach.
 By prerendering the page, on the server, we allow the search engines to crawl the page.
 
+
 ### Works like this
 1. The browser points to a route.
 2. The server check if any async data if needed
@@ -13,21 +14,13 @@ By prerendering the page, on the server, we allow the search engines to crawl th
    *Here is where the web crawlers will see the already rendered page*
 4. The browser obtains the fully rendered page and with the async data already in the Redux Store's state.
 5. From now on the page acts like a SPA with all the benefits of React without jeopardising the page's SEO.
-6. The server also generates a simple sitemap based on the routes of the app*  
-
-
-___
+6. The server also generates a simple sitemap based on the routes of the app
 
 
 
 ### Tech
 The front-end is built with React, Redux, React-router-v4, Webpack, Helmet, ...  
 The server side with node, express, React & Webpack.
-
-
-___
-
-
 
 
 ### Building
