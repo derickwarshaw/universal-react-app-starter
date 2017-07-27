@@ -22,6 +22,9 @@ By prerendering the page, on the server, we allow the search engines to crawl th
 This app is built with React, Redux, React-router-v4, Webpack, Helmet, ...  
 The server side with node, express, React & Webpack.
 
+
+*This is just an first approach. Feel free to contribute by sending a PR*
+
 ---
 
 ## To start
@@ -40,9 +43,3 @@ The server side with node, express, React & Webpack.
 ```
   npm run prod
 ```
-
-
-
-
-
-*This is just an first approach. Feel free to contribute by sending a PR*
