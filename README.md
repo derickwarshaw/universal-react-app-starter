@@ -13,7 +13,7 @@ By prerendering the page, on the server, we allow the search engines to crawl th
 4. From now on the browser page acts like a SPA with all the benefits & without jeopardising the page's SEO.  
 
 
-*The server also generates a simple sitemap based on the routes of the app*  
+   *The server also generates a simple sitemap based on the routes of the app*  
 
 
 ___
