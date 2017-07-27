@@ -16,25 +16,6 @@
     display: block;
   }
 
-  .hero-image {
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-
-    backface-visibility: hidden;
-    pointer-events: none;
-
-    will-change: opacity, transform;
-    transition: transform 8000ms ease-out, opacity 550ms;
-
-    @media (max-width: 768px) {
-      background-position: 73% 50% !important;
-    }
-  }
-
   .hero-content {
     position: absolute;
     left: 0;

@@ -65,17 +65,7 @@ const Helpers  = {
     } catch (e) {};
   },
   postInit: () => {
-    // Some plugin calls
-    objectFitImages();
-
-    window.onbeforeunload = () => {
-      window.scrollTo(0, 0);
-    };
-
-    var stickyElements = document.getElementsByClassName('sticky');
-    for (var i = stickyElements.length - 1; i >= 0; i--) {
-        Stickyfill.add(stickyElements[i]);
-    }
+    // Some plugin related things
   },
   getPosY: (elm) => {
     let test = elm, top = 0;
