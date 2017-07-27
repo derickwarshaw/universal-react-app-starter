@@ -11,9 +11,8 @@ By prerendering the page, on the server, we allow the search engines to crawl th
 
 
 ### Tech
-The front-end is built with React, Redux, React-router-v4, Webpack, Helmet, ...
-
-The server side with node, express, React & Webpack.
+- The front-end is built with React, Redux, React-router-v4, Webpack, Helmet, ...
+- The server side with node, express, React & Webpack.
 
 ### Building
 To build & run invoke the following commands:
