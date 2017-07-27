@@ -32,7 +32,7 @@ The server side with node, express, React & Webpack.
 ```
 
 ## Building and running
-### locally
+### Locally (development mode)
 ```
   npm run start
 ```
