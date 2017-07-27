@@ -27,6 +27,7 @@ The server side with node, express, React & Webpack.
 To build invoke the following commands:
 
 ```
+  git clone https://github.com/jonanderdev/universal-react-app-starter
   npm install
   npm run build:client
   npm run build:server
