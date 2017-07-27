@@ -15,7 +15,7 @@ By prerendering the page, on the server, we allow the search engines to crawl th
 - The server side with node, express, React & Webpack.
 
 ### Building
-To build & run invoke the following commands:
+To build invoke the following commands:
 
 ```
   npm install
