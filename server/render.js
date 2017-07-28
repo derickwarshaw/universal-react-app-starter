@@ -57,7 +57,7 @@ module.exports = function(app) {
       if (component.fetchData) {
         component.fetchData({ store, params: (foundPath ? foundPath.params : {}) })
           .then(onFinish).catch((err) => {
-            console.e('Error', err);
+            console.error('Error', err);
             onFinish();
           });
       } else {
