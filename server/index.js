@@ -10,9 +10,6 @@ app.use(express.static(__dirname));
 // Render Page
 render(app);
 
-// Api router
-api(app);
-
 // Sitemap generation
 sitemap();
 
