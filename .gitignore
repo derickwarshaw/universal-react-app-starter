@@ -3,6 +3,8 @@ app.bundle.js
 app.bundle.css
 server.bundle.js
 npm-debug.log
+sitemap.xml
+robots.txt
 .DS_Store
 .env
 
