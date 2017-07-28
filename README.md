@@ -19,7 +19,7 @@ By prerendering the page on the server, we allow the search engines to properly 
 
 
 ## Tech
-This app is built with React, Redux, React-router-v4, Webpack, Helmet, ...  
+This app is built with React, Redux, React-router-v4, Webpack, Helmet, Sass, Postcss, ...  
 The server side with node, express, React & Webpack.
 
 ---
