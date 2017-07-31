@@ -17,6 +17,14 @@ By prerendering the page on the server, we allow the search engines to properly 
 6. The server also generates a simple sitemap based on the routes of the app
 
 
+---
+
+### Important points
+1. **[render.js](https://github.com/jonanderdev/universal-react-app-starter/blob/master/server/render.js)** is the file where all the server prerendering is done. Basically creates a first version of the page with the help of React, a Store object and a static router.
+2. **[index.js](https://github.com/jonanderdev/universal-react-app-starter/blob/master/src/js/index.js)** is the client (browser) entry point. Here is where your react app start its work.
+3. **[app.js](https://github.com/jonanderdev/universal-react-app-starter/blob/master/src/js/app.js)**, shared between server & client (browser), this file is the main component of the app. Inside we have the page shared elements, like navbar, and the different routes.  
+
+---
 
 ## Tech
 This app is built with React, Redux, React-router-v4, Webpack, Helmet, Sass, Postcss, ...  
